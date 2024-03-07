@@ -5,8 +5,8 @@ function main()
     clear all;
     close all;
 
-    img_path = input("Please use the absolute path to input the image to be processed: ",'s');
-    img_path = "/Users/lxmliu2002/Desktop/matlab/lab1/pic/NKU70.jpg";
+    img_path = input("Please use the absolute path to input the image to be processed: ", 's');
+    % img_path = "/Users/lxmliu2002/Desktop/matlab/lab1/pic/NKU70.jpg";
 
     original_img = imresize(imread(img_path), 0.25);
     disp("The size of the original image is: ");
@@ -81,8 +81,8 @@ end
 % - img: The halftoned image.
 %
 function img = img_halftone(gray_img)
-    img_size = size(gray_img); % 两张图像的尺寸一致，故而此处以 img1 的 size 作为 img 的 size
-    disp("The size of the img1 is: ");
+    img_size = size(gray_img);
+    disp("The size of the gray_img is: ");
     disp(img_size);
     
     %%

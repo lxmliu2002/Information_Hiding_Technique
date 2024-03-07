@@ -5,7 +5,7 @@ function main()
     clear all;
     close all;
     
-    img_path = input("Please use the absolute path to input the image to be processed: ",'s');
+    img_path = input("Please use the absolute path to input the image to be processed: ", 's');
     % img_path = "/Users/lxmliu2002/Desktop/matlab/lab1/pic/NKU70.bmp";
 
     original_img = imresize(imread(img_path), 0.25);

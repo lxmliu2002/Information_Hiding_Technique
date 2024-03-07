@@ -4,20 +4,17 @@ function main()
     clc;
     clear all;
     close all;
-    % path = input("请输入要加密的图片：",'s');%彩色图（R-C.bmp）
-    img_path = input("Please use the absolute path to input the image to be processed: ",'s');
+
+    img_path = input("Please use the absolute path to input the image to be processed: ", 's');
     % img_path = "/Users/lxmliu2002/Desktop/matlab/lab1/pic/NKU70.jpg";
 
     original_img = imresize(imread(img_path), 0.25);
-    % gray = imread(img_path);
-
     disp("The size of the original image is: ");
     disp(size(original_img));
     figure;
     imshow(original_img);
     title('original\_img');
     imwrite(original_img, './pic/Visual_Cryptography_Rgb/original_img.bmp');
-    % imshow(original_img);
 
     original_img_size = size(original_img);
     disp("The size of the original_img_size is: ");
@@ -90,7 +87,7 @@ end
 % - img: The halftoned image.
 %
 function img = img_halftone(gray_img)
-    img_size = size(gray_img); % 两张图像的尺寸一致，故而此处以 img1 的 size 作为 img 的 size
+    img_size = size(gray_img);
     disp("The size of the img1 is: ");
     disp(img_size);
     
