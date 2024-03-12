@@ -31,7 +31,7 @@ function main()
     figure;
     imshow(halftone_img);
     title('halftone\_img');
-    imwrite(gray_img, './pic/Visual_Cryptography_Gray/halftone_img.jpg');
+    imwrite(halftone_img, './pic/Visual_Cryptography_Gray/halftone_img.jpg');
 
     binary_original_img = im2bw(halftone_img);
     disp("The size of binary_original_img is: ");
