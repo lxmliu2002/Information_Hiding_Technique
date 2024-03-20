@@ -8,11 +8,9 @@ imshow(img);
 title('原图像');
 imwrite(img, './pic/BMPbit1_8_XtoY/NKU70_gray.bmp');
 
-m = size(img, 1);
-n = size(img, 2);
-y = zeros(m, n);
-
 for t = 1 : 8
+    [m, n] = size(img);
+    y = zeros(m, n);
     for i = 1 : m
         for j = 1 : n
             x(i, j) = bitget(img(i, j), t);
